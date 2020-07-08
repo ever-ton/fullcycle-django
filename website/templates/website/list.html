@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="/static/website/css/index.css"> 
+</head>
+
+<body>
+    <div class="box">
+       <div>
+         <h1 class="text-center display-3" >Maratona Full Cycle 3.0</h1>
+         <h4 class="text-center"><small>#eumecomprometo</small></h4>
+       </div>
+       
+       &nbsp;
+       &nbsp;
+       &nbsp;
+       &nbsp;
+
+      <table class="table table-striped">
+         <thead>
+            <tr>
+               <th>#Aula</th>
+               <th>Data</th>
+               <th>Instrutor</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for aula in aulas %} 
+            <tr>
+               <td>{{ aula.titulo }}</td>
+               <td>{{ aula.data }}</td> 
+               <td>{{ aula.apresentador }}</td> 
+            </tr>
+            {% endfor %}  
+         </tbody>
+       </table>
+      </div>
+</body>
+</html>
+
+
+  
+  
+  
